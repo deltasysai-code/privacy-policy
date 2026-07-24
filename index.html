@@ -65,7 +65,7 @@
 <div class="header">
     <h1>DeltaSys AI</h1>
     <p>Política de Privacidad y Términos de Uso</p>
-    <div class="updated">Última actualización: 2 de julio de 2026</div>
+    <div class="updated">Última actualización: 24 de julio de 2026</div>
 </div>
 
 <!-- NAV -->
@@ -78,6 +78,7 @@
     <a href="#paises">Países</a>
     <a href="#seguridad">Seguridad</a>
     <a href="#terminos">Términos</a>
+    <a href="#mireciboya">MiReciboYa</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
@@ -85,9 +86,9 @@
 
 <!-- 1. GENERAL -->
 <h2 id="general">1. Información General</h2>
-<p>Esta política aplica a <strong>todas las aplicaciones móviles</strong> desarrolladas y publicadas por <strong>DeltaSys AI</strong> ("nosotros") en Google Play Store, incluyendo aplicaciones de cálculos tributarios, laborales y financieros, y aplicaciones generadoras de documentos (como <strong>Generador de Hoja de Vida</strong>) para países de Latinoamérica.</p>
+<p>Esta política aplica a <strong>todas las aplicaciones móviles</strong> desarrolladas y publicadas por <strong>DeltaSys AI</strong> ("nosotros") en Google Play Store, incluyendo aplicaciones de cálculos tributarios, laborales y financieros, aplicaciones generadoras de documentos (como <strong>Generador de Hoja de Vida</strong>) y aplicaciones de gestión para trabajadores independientes (como <strong>MiReciboYa</strong>) para países de Latinoamérica.</p>
 <div class="highlight">
-    <strong>Resumen:</strong> Nuestras apps NO recopilan información personal identificable. Los cálculos se almacenan localmente en su dispositivo y nunca se envían a servidores externos. Usamos servicios de Google (AdMob, Firebase) que recopilan datos anónimos para publicidad y mejora de las apps.
+    <strong>Resumen:</strong> Nuestras apps NO recopilan información personal identificable. Los datos se almacenan localmente en su dispositivo y nunca se envían a servidores de DeltaSys AI (no tenemos servidores). Usamos servicios de Google (AdMob y, en algunas apps, Firebase) que recopilan datos anónimos para publicidad y mejora de las apps. En <strong>MiReciboYa</strong>, si usted lo activa, sus recibos se respaldan en <strong>su propia cuenta de Google Drive</strong> (ver sección 9).
 </div>
 
 <!-- 2. DATOS -->
@@ -103,10 +104,10 @@
     <li>Documentos de identidad (cédula, DNI, RUC, NIT, RUT, CURP, etc.)</li>
     <li>Información salarial real — los valores ingresados son simulaciones locales</li>
 </ul>
-<p>En algunas de nuestras apps (por ejemplo, las generadoras de hojas de vida) el usuario <strong>ingresa</strong> este tipo de datos para crear su documento; sin embargo, dichos datos <strong>permanecen exclusivamente en el dispositivo</strong> y nunca llegan a DeltaSys AI ni a terceros (ver sección 2.2).</p>
+<p>En algunas de nuestras apps (por ejemplo, las generadoras de hojas de vida o de recibos como <strong>MiReciboYa</strong>) el usuario <strong>ingresa</strong> este tipo de datos para crear su documento; sin embargo, dichos datos <strong>permanecen exclusivamente en el dispositivo</strong> (o, en el caso del respaldo opcional de MiReciboYa, en la propia cuenta de Google Drive del usuario) y nunca llegan a DeltaSys AI ni a terceros (ver secciones 2.2 y 9).</p>
 
 <h3>2.2 Datos almacenados localmente (Room Database)</h3>
-<p>Nuestras apps guardan historial de cálculos, preferencias y — en las apps generadoras de documentos — la información ingresada por el usuario, <strong>únicamente en el almacenamiento interno de su dispositivo</strong>. Estos datos nunca se envían a ningún servidor, no son accesibles por otras apps, y se eliminan al desinstalar la aplicación.</p>
+<p>Nuestras apps guardan historial de cálculos, preferencias y — en las apps generadoras de documentos — la información ingresada por el usuario, <strong>únicamente en el almacenamiento interno de su dispositivo</strong>. Estos datos nunca se envían a servidores de DeltaSys AI, no son accesibles por otras apps, y se eliminan al desinstalar la aplicación.</p>
 
 <h3>2.2.1 Apps generadoras de documentos (Generador de Hoja de Vida)</h3>
 <p>En <strong>Generador de Hoja de Vida</strong>, los datos que usted ingresa para construir su currículum (nombre, datos de contacto, documento de identidad, experiencia laboral, educación, habilidades e idiomas) se utilizan <strong>únicamente para generar el documento PDF en su dispositivo</strong>:</p>
@@ -125,7 +126,7 @@
     <tr><td><strong>Firebase Crashlytics</strong></td><td>Reportes de errores, stack traces, modelo/versión del dispositivo</td><td>Corregir errores</td></tr>
     <tr><td><strong>Firebase Remote Config</strong></td><td>Ningún dato personal — solo descarga configuración</td><td>Actualizar valores tributarios</td></tr>
 </table>
-<p><em>Nota: los servicios de Firebase solo aplican a las apps que los integran. Algunas de nuestras apps (por ejemplo, <strong>Generador de Hoja de Vida</strong>) no incluyen Firebase; en ellas el único servicio de terceros es Google AdMob.</em></p>
+<p><em>Nota: los servicios de Firebase solo aplican a las apps que los integran. Algunas de nuestras apps (por ejemplo, <strong>Generador de Hoja de Vida</strong> y <strong>MiReciboYa</strong>) no incluyen Firebase; en ellas el único servicio de publicidad y análisis de terceros es Google AdMob. En MiReciboYa se usan además Google Drive y Google Play Billing, descritos en la sección 9.</em></p>
 
 <!-- 3. TERCEROS -->
 <h2 id="terceros">3. Servicios de Terceros</h2>
@@ -170,10 +171,10 @@
 <p>Los valores legales utilizados en los cálculos (salarios mínimos, unidades tributarias, tasas de aportes, tablas de retención) se actualizan periódicamente mediante Firebase Remote Config. Sin embargo, <strong>DeltaSys AI no garantiza</strong> que dichos valores estén vigentes o sean correctos al momento de la consulta. Puede existir un desfase entre la publicación oficial de nuevos valores y su actualización en la aplicación.</p>
 
 <h3>5.5 Privacidad de los datos del usuario</h3>
-<p>Todos los datos ingresados por el usuario (salarios, montos, valores de cálculo) se procesan y almacenan <strong>única y exclusivamente en el dispositivo del usuario</strong>. Estos datos nunca se envían a servidores externos, nunca se transmiten por internet y nunca son accesibles por DeltaSys AI ni por terceros.</p>
+<p>Todos los datos ingresados por el usuario (salarios, montos, valores de cálculo, documentos, recibos) se procesan y almacenan <strong>única y exclusivamente en el dispositivo del usuario</strong>. Estos datos nunca se envían a servidores de DeltaSys AI ni son accesibles por DeltaSys AI o terceros. La única excepción es el respaldo opcional de <strong>MiReciboYa</strong>, que — solo si usted lo activa — sube sus recibos a <strong>su propia cuenta de Google Drive</strong> (ver sección 9).</p>
 
 <h3>5.6 No recopilación de datos personales</h3>
-<p><strong>DeltaSys AI no recopila, almacena ni procesa datos personales o financieros del usuario.</strong> No tenemos acceso a los valores que usted ingresa en la aplicación, ni a su historial de cálculos, ni a ninguna información que pueda identificarlo personalmente. Los únicos datos recopilados son los descritos en la sección de Servicios de Terceros (Advertising ID anónimo por Google AdMob y datos de uso agregados por Firebase).</p>
+<p><strong>DeltaSys AI no recopila, almacena ni procesa datos personales o financieros del usuario.</strong> No tenemos acceso a los valores que usted ingresa en la aplicación, ni a su historial de cálculos, ni a ninguna información que pueda identificarlo personalmente. Los únicos datos recopilados son los descritos en la sección de Servicios de Terceros (Advertising ID anónimo por Google AdMob y datos de uso agregados por Firebase, en las apps que lo integran).</p>
 
 <!-- 6. PAÍSES -->
 <h2 id="paises">6. Cumplimiento Legal por País</h2>
@@ -319,7 +320,7 @@
 <ul>
     <li>Comunicaciones cifradas con <strong>HTTPS</strong></li>
     <li>Datos locales en almacenamiento interno protegido por el sandbox de Android</li>
-    <li>Respaldo automático de bases de datos <strong>deshabilitado</strong></li>
+    <li>Respaldo automático de bases de datos de Android <strong>deshabilitado</strong> (en <strong>MiReciboYa</strong>, el respaldo a su propio Google Drive es opcional y controlado por usted — ver sección 9)</li>
     <li>Código ofuscado con <strong>R8/ProGuard</strong> en producción</li>
     <li>Sin servidores propios — cero superficie de ataque</li>
 </ul>
@@ -349,17 +350,52 @@
 <p>Las aplicaciones, código, diseño y contenido son propiedad de DeltaSys AI. Queda prohibida su reproducción sin autorización.</p>
 
 <h3>8.4 Monetización</h3>
-<p>Apps gratuitas monetizadas con publicidad (Google AdMob). Sin compras in-app ni versiones premium.</p>
+<p>Apps gratuitas monetizadas con publicidad (Google AdMob). Sin compras in-app ni versiones premium, con excepción de <strong>MiReciboYa</strong>, que ofrece una versión Premium opcional mediante Google Play Billing (ver sección 9).</p>
 
 <h3>8.5 Disponibilidad</h3>
 <p>Podemos modificar, suspender o descontinuar cualquier app sin previo aviso.</p>
 
-<!-- 9. CAMBIOS -->
-<h2>9. Cambios en esta Política</h2>
+<!-- 9. MIRECIBOYA -->
+<h2 id="mireciboya">9. Aplicación: MiReciboYa</h2>
+<p><strong>MiReciboYa</strong> es nuestra app para crear recibos de servicios, pensada para técnicos y trabajadores independientes. Por sus funciones adicionales (respaldo en Google Drive y versión Premium), aplican estas condiciones específicas, que complementan — y donde difieran, reemplazan — lo dicho en las secciones anteriores.</p>
+
+<h3>9.1 Datos que maneja</h3>
+<p>Los recibos que usted crea (nombre y teléfono de sus clientes, descripción del trabajo, montos, método de pago, garantía y folio), las fotos de evidencia, las firmas y los datos de su negocio (nombre, teléfono, dirección y logo) se guardan <strong>únicamente en su dispositivo</strong> (Room Database y almacenamiento interno). DeltaSys AI no recibe ni tiene acceso a esa información.</p>
+<p>Usted es responsable de tratar los datos de sus clientes conforme a la normativa de protección de datos de su país (ver sección 6).</p>
+
+<h3>9.2 Copia de seguridad en Google Drive (opcional)</h3>
+<ul>
+    <li>Si usted conecta su cuenta de Google, la app sube sus recibos (PDF y un archivo de respaldo) a la carpeta <strong>MiReciboYa</strong> de <strong>su propio Google Drive</strong>, para que pueda recuperarlos al cambiar de dispositivo.</li>
+    <li>Se usa el permiso restringido <strong>drive.file</strong>: la app solo puede ver y modificar los archivos que ella misma creó, nunca el resto de su Drive.</li>
+    <li>DeltaSys AI no tiene acceso a su Drive ni a sus respaldos; el respaldo queda en su cuenta de Google, bajo la política de privacidad de Google.</li>
+    <li>Puede desconectar Drive desde los Ajustes de la app cuando quiera, y eliminar la carpeta MiReciboYa de su Drive para borrar el respaldo definitivamente.</li>
+</ul>
+
+<h3>9.3 Compras y versión Premium</h3>
+<p>MiReciboYa ofrece suscripciones y una compra única Premium, procesadas íntegramente por <strong>Google Play Billing</strong>. DeltaSys AI no ve ni almacena sus datos de pago (tarjetas, cuentas); esa información la maneja Google Play. La versión Premium no muestra anuncios ni inicializa el SDK de publicidad.</p>
+
+<h3>9.4 Anuncios</h3>
+<p>La versión gratuita muestra anuncios mediante Google AdMob, en los términos de las secciones 3 y 4. MiReciboYa <strong>no</strong> utiliza Firebase Analytics, Crashlytics ni Remote Config.</p>
+
+<h3>9.5 Permisos</h3>
+<ul>
+    <li><strong>Cámara / galería:</strong> solo cuando usted decide añadir una foto de evidencia, una firma o el logo de su negocio. Las imágenes se guardan localmente en la app.</li>
+    <li><strong>Internet:</strong> para el respaldo en Drive, los anuncios (versión gratuita) y las compras. La app funciona sin conexión para crear y guardar recibos.</li>
+</ul>
+
+<h3>9.6 Eliminación de datos</h3>
+<ul>
+    <li>Borre recibos individuales desde la propia app.</li>
+    <li>Borre todos los datos locales desde los Ajustes de Android (Almacenamiento → Borrar datos) o desinstalando la app.</li>
+    <li>Borre el respaldo eliminando la carpeta MiReciboYa de su Google Drive.</li>
+</ul>
+
+<!-- 10. CAMBIOS -->
+<h2>10. Cambios en esta Política</h2>
 <p>Podemos actualizar esta política periódicamente. Los cambios se publicarán aquí con la fecha de actualización. El uso continuado de nuestras apps constituye aceptación.</p>
 
-<!-- 10. CONTACTO -->
-<h2 id="contacto">10. Contacto</h2>
+<!-- 11. CONTACTO -->
+<h2 id="contacto">11. Contacto</h2>
 <p>Para preguntas, solicitudes de eliminación de datos o reportes:</p>
 <div class="highlight">
     <strong>DeltaSys AI</strong><br>
@@ -375,7 +411,7 @@
 <div class="footer">
     <div class="brand">DeltaSys AI</div>
     <p>Política de Privacidad y Términos de Uso</p>
-    <p>Última actualización: 2 de julio de 2026</p>
+    <p>Última actualización: 24 de julio de 2026</p>
     <p style="margin-top: 12px;">
         <a href="mailto:deltasysai@gmail.com">deltasysai@gmail.com</a>
     </p>
